@@ -1,7 +1,7 @@
-const { default: GraphQLJoinTransform } = require("jakeblaxon-graphql-join");
-const { originalSchema } = require("./originalSchema.js");
-const { wrapSchema } = require("@graphql-tools/wrap");
-const { ApolloServer } = require("apollo-server");
+import GraphQLJoinTransform from "jakeblaxon-graphql-join";
+import { originalSchema } from "./originalSchema.js";
+import { wrapSchema } from "@graphql-tools/wrap";
+import { ApolloServer } from "apollo-server";
 
 const graphqlJoinTransform = new GraphQLJoinTransform({
   typeDefs: `
