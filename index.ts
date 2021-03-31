@@ -1,4 +1,4 @@
-import GraphQLJoinTransform from "jakeblaxon-graphql-join";
+import GraphQLJoinTransform from "graphql-join-transform";
 import { originalSchema } from "./originalSchema";
 import { wrapSchema } from "@graphql-tools/wrap";
 import { ApolloServer } from "apollo-server";
