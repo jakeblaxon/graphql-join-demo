@@ -1058,10 +1058,10 @@ graphql-extensions@^0.13.0:
     apollo-server-env "^3.0.0"
     apollo-server-types "^0.7.0"
 
-graphql-join-transform@0.0.0:
+graphql-join@0.0.0:
   version "0.0.0"
-  resolved "https://registry.yarnpkg.com/graphql-join-transform/-/graphql-join-transform-0.0.0.tgz#b0c697c7de2d847d74bd1c3f0324f40dc9887324"
-  integrity sha512-2m2ysqLIgUfOvnAoFsWEQ9xk+SgdgJVrV8AVEUPG9rTDTQx6941tlK+5U3ICDE2Ylj50TpsfoUq1O/jkoEFOEw==
+  resolved "https://registry.yarnpkg.com/graphql-join/-/graphql-join-0.0.0.tgz#de57dc2fdb595be13bc5bc847107c0bc3c0be23d"
+  integrity sha512-fg9BOB1q32/M5qLy1wgjsOubzS0tyA0gRFS4y9wkd53l8z2beYvLioY/YUfAAuvhJsEiJDh4RW5OiBQj4ilKig==
   dependencies:
     "@graphql-tools/batch-delegate" "^7.0.2"
     "@graphql-tools/delegate" "^7.0.10"
