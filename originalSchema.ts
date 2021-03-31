@@ -12,7 +12,8 @@ const books = [
   { id: "3", title: "Pride and Prejudice", authorId: "2" },
   { id: "4", title: "Romeo & Juliet", authorId: "1" },
   { id: "5", title: "Macbeth", authorId: "1" },
-  { id: "6", title: "A Tale of Two Cities", authorId: "3" }
+  { id: "6", title: "A Tale of Two Cities", authorId: "3" },
+  { id: "7", title: "Sense and Sensibility", authorId: "2" }
 ];
 
 export const originalSchema = makeExecutableSchema({
@@ -35,10 +36,14 @@ export const originalSchema = makeExecutableSchema({
   resolvers: {
     Query: {
       getAuthors(parent, args) {
-        return authors;
+        return args.ids
+          ? authors.filter((author) => args.ids.includes(author.id))
+          : authors;
       },
       getBooks(parent, args) {
-        return books;
+        return args.ids
+          ? books.filter((book) => args.ids.includes(book.id))
+          : books;
       },
       getBooksByAuthorIds(parent, args) {
         return books.filter((book) => args.ids.includes(book.authorId));
